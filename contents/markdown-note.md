@@ -6,6 +6,10 @@ coverY: 0
 
 # Markdown Note
 
+{% embed url="https://markdown.com.cn" %}
+markdown官方文档
+{% endembed %}
+
 ## Markdown 代码
 
 用反引号把它包起来（\`）
@@ -42,8 +46,6 @@ $(document).ready(function () {
 <https://www.google.com>
 ```
 
-
-
 ## Markdown 图片
 
 * 开头一个感叹号 !
@@ -67,8 +69,6 @@ Markdown 还没有办法指定图片的高度与宽度，如果需要，可以�
 ```
 <img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
 ```
-
-
 
 ## Markdown 表格
 
@@ -145,6 +145,20 @@ ___粗斜体文本___
 <u>带下划线文本</u>
 ```
 
-\
+## Markdown内嵌html😊
 
+对于 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 本身。如需使用 HTML，不需要额外标注这是 HTML 或是 Markdown，只需 HTML 标签添加到 Markdown 文本中即可。
 
+### 标题加粗居中写法 <a href="#articlecontentid" id="articlecontentid"></a>
+
+加粗
+
+< b >加粗内容< / b >
+
+居中
+
+< center >居中内容< /center >
+
+### &#x20; <a href="#hang-ji-nei-lian-biao-qian" id="hang-ji-nei-lian-biao-qian"></a>
+
+###
