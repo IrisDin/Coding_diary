@@ -4,7 +4,7 @@
 
 ## Contents
 
-* [Python Gnernal](contents/python-gnernal/README.md)
+* [Python General](contents/python-gnernal/README.md)
   * [Python Library Reference](contents/python-gnernal/python-library-reference.md)
 * [Machine Learning](contents/machine-learning.md)
 * [R](contents/r.md)

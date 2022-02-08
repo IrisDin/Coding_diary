@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# Python Gnernal
+# Python General
 
 ## Python运算符
 
@@ -12,18 +12,18 @@ coverY: 0
 
 假设变量 a=10，b=21：
 
-| 运算符  | 描述                        | 实例                                              |
-| ---- | ------------------------- | ----------------------------------------------- |
-| +    | 加 - 两个对象相加                | a + b 输出结果 31                                   |
-| -    | 减 - 得到负数或是一个数减去另一个数       | a - b 输出结果 -11                                  |
-| \*   | 乘 - 两个数相乘或是返回一个被重复若干次的字符串 | a \* b 输出结果 210                                 |
-| /    | 除 - x 除以 y                | b / a 输出结果 2.1                                  |
-| %    | 取模 - 返回除法的余数              | b % a 输出结果 1                                    |
-| \*\* | 幂 - 返回x的y次幂               | a\*\*b 为10的21次方                                 |
-| //   | 取整除 - 向下取接近商的整数           | <pre><code>>>> 9//2
-4
->>> -9//2
--5</code></pre> |
+| 运算符  | 描述                        | 实例                               |
+| ---- | ------------------------- | -------------------------------- |
+| +    | 加 - 两个对象相加                | a + b 输出结果 31                    |
+| -    | 减 - 得到负数或是一个数减去另一个数       | a - b 输出结果 -11                   |
+| \*   | 乘 - 两个数相乘或是返回一个被重复若干次的字符串 | a \* b 输出结果 210                  |
+| /    | 除 - x 除以 y                | b / a 输出结果 2.1                   |
+| %    | 取模 - 返回除法的余数              | b % a 输出结果 1                     |
+| \*\* | 幂 - 返回x的y次幂               | a\*\*b 为10的21次方                  |
+| //   | 取整除 - 向下取接近商的整数           | <pre><code>>>> 9//2</code></pre> |
+| 4    |                           |                                  |
+
+> > > \-9//2 -5 |
 
 ### 比较运算符 <a href="#ysf2" id="ysf2"></a>
 
@@ -42,18 +42,21 @@ coverY: 0
 
 以下假设变量a为10，变量b为20：
 
-| 运算符   | 描述                                        | 实例                                                                                                                                                   |
-| ----- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| =     | 简单的赋值运算符                                  | c = a + b 将 a + b 的运算结果赋值为 c                                                                                                                         |
-| +=    | 加法赋值运算符                                   | c += a 等效于 c = c + a                                                                                                                                 |
-| -=    | 减法赋值运算符                                   | c -= a 等效于 c = c - a                                                                                                                                 |
-| \*=   | 乘法赋值运算符                                   | c \*= a 等效于 c = c \* a                                                                                                                               |
-| /=    | 除法赋值运算符                                   | c /= a 等效于 c = c / a                                                                                                                                 |
-| %=    | 取模赋值运算符                                   | c %= a 等效于 c = c % a                                                                                                                                 |
-| \*\*= | 幂赋值运算符                                    | c \*\*= a 等效于 c = c \*\* a                                                                                                                           |
-| //=   | 取整除赋值运算符                                  | c //= a 等效于 c = c // a                                                                                                                               |
-| :=    | 海象运算符，可在表达式内部为变量赋值。**Python3.8 版本新增运算符**。 | <p>在这个示例中，赋值表达式可以避免调用 len() 两次:</p><pre><code>if (n := len(a)) > 10:
-    print(f"List is too long ({n} elements, expected &#x3C;= 10)")</code></pre> |
+| 运算符   | 描述                                        | 实例                                                                                |
+| ----- | ----------------------------------------- | --------------------------------------------------------------------------------- |
+| =     | 简单的赋值运算符                                  | c = a + b 将 a + b 的运算结果赋值为 c                                                      |
+| +=    | 加法赋值运算符                                   | c += a 等效于 c = c + a                                                              |
+| -=    | 减法赋值运算符                                   | c -= a 等效于 c = c - a                                                              |
+| \*=   | 乘法赋值运算符                                   | c \*= a 等效于 c = c \* a                                                            |
+| /=    | 除法赋值运算符                                   | c /= a 等效于 c = c / a                                                              |
+| %=    | 取模赋值运算符                                   | c %= a 等效于 c = c % a                                                              |
+| \*\*= | 幂赋值运算符                                    | c \*\*= a 等效于 c = c \*\* a                                                        |
+| //=   | 取整除赋值运算符                                  | c //= a 等效于 c = c // a                                                            |
+| :=    | 海象运算符，可在表达式内部为变量赋值。**Python3.8 版本新增运算符**。 | <p>在这个示例中，赋值表达式可以避免调用 len() 两次:</p><pre><code>if (n := len(a)) > 10:</code></pre> |
+
+```
+print(f"List is too long ({n} elements, expected &#x3C;= 10)")</code></pre> |
+```
 
 ### 逻辑运算符 <a href="#ysf4" id="ysf4"></a>
 
@@ -104,15 +107,11 @@ Python 的元组与列表类似，不同之处在于元组的元素不能修改�
 
 元组创建很简单，只需要在括号中添加元素，并使用逗号隔开即可。
 
-
-
 ### 集合(Set)
 
 集合是一个无序不重复元素的集。基本功能包括关系测试和消除重复元素。
 
 可以用大括号({})创建集合。注意：如果要创建一个空集合，你必须用 set() 而不是 {} ；后者创建一个空的字典
-
-
 
 ### 字典(Dictionary)
 
@@ -121,6 +120,103 @@ Python 的元组与列表类似，不同之处在于元组的元素不能修改�
 理解字典的最佳方式是把它看做无序的键=>值对集合。在同一个字典之内，关键字必须是互不相同。
 
 一对大括号创建一个空的字典：{}
+
+## 数据结构复杂度
+
+### Big-O 表示法：
+
+Big-O 表示法是一种测量操作时间复杂度的方法。
+
+在一个算法中会执行许多操作。这些操作包括迭代集合，复制元素或整个集合，将元素附加到集合，在集合的开头或结尾插入元素，删除元素或更新集合中的元素。
+
+**Big-O** 用来衡量操作的时间复杂度。它测量算法运行需要花费的时间
+
+假设程序输入的大小为 n ,以下的是常见的Big-O符号。
+
+* <mark style="background-color:yellow;">O(1)</mark>: 无论输入的 n 有多大，执行操作所需的**时间恒定**。这是常数复杂度，最快的算法。例如，检查集合中是否存在元素，时间复杂度是 O(1)。不论算法代码有多少行，只要其中没有**循环、递归，**按前文所介绍计算方法，其时间复杂度都是Ο(1)。\
+
+
+```
+# example of O(1) from CSE163
+# 尽管函数中有循环，但是与输入值n无关，所以时间复杂度为O(1)
+def method(n):
+    t = 0
+    for i in range(3):
+        for j in range(14):
+            t += n
+        
+        for j in range(200):
+            t += j
+    return j
+```
+
+* <mark style="background-color:yellow;">O(log n):</mark> 随着输入的增加，执行操作所需的时间呈**对数增加**。这是对数时间复杂度。一般优化后搜索算法是O(log n)，比如二分查找。\
+
+* <mark style="background-color:yellow;">O(n)</mark>: 随着输入的增加，执行操作所需的时间呈**线性增加**。这是线性时间复杂度。就性能而言，属于中等。 例如，如果想对一个集合中的所有元素求和，那么必须遍历该集合中的全部元素。 因此时间复杂度是O(n)。
+
+```
+# example of O(n) from course CSE163
+def method1(n):
+    value = 0
+    for i in range(n):
+        for j in range(9):
+            value += 7 * i + j
+    return value ** 2 
+```
+
+* <mark style="background-color:yellow;">O(nlog n)</mark>: 快速排序算法的时间复杂度通常为O(nlog n)。\
+
+* <mark style="background-color:yellow;">O(n^2)</mark>: 平方时间度复杂度，如两层嵌套的循环
+
+```
+# example of O(n^2) from course CSE163
+# 有两层嵌套的循环（nested for loop),所以时间复杂度为n^2
+def method(nums):
+    max_diff = None
+    for n1 in nums:
+        for n2 in nums:
+            diff = n1 - n2
+            if max_diff is None or diff > max_diff:
+                diff = max_diff
+    return max_diff
+```
+
+```
+# example of O(n^2) from course CSE163
+# for this code, "n" is the length of the given list of numbers nums
+def method(nums):
+    x = len(nums)
+    t = 0
+    for i in range(x * x / 2):
+        t += i
+    return t
+```
+
+* <mark style="background-color:yellow;">O(n!):</mark> 阶乘时间复杂度，它非常缓慢。
+
+![comparison between different models](https://d33wubrfki0l68.cloudfront.net/1010f5d18ec531e5f14ab93361391e2d51e7bc82/51941/images/big-o/big-o-graph.svg)
+
+![](https://pic4.zhimg.com/80/v2-51a7065f3b3ea8c68a42c03832fb5853\_1440w.jpg)
+
+**\*简单的例子比较函数的复杂度**
+
+```
+def sum1(n):                 # Total: n + 3 steps
+    total = 0                # 1 step
+    for i in range(n + 1):   # Runs n + 1 times, for a total of n + 1
+        total += i           #   1 step
+    return total             # 1 step
+
+
+def sum2(n):                 # Total: 1 step
+    return n * (n + 1) // 2  # 1 step
+```
+
+Sum1 (n)运行**（n+3）**步，而sum2(n)总是运行**1**步
+
+如图所示，所以sum1（n）会随着输入值n的增加而呈线性增加，而sum2（n）是恒定的
+
+![](https://static.us.edusercontent.com/files/UEmjcGL60KC1zovZQd88i3Q4)
 
 ## Python 类（Class)
 

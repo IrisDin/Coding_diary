@@ -18,19 +18,17 @@ Click to view pandas offcial documentation
 
 DataFrame 是一个表格型的数据结构，它含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔型值）。DataFrame 既有行索引也有列索引，它可以被看做由 Series 组成的字典
 
-![
-](https://www.runoob.com/wp-content/uploads/2021/04/pandas-DataStructure.png)
+![](https://www.runoob.com/wp-content/uploads/2021/04/pandas-DataStructure.png)
 
 ![](https://www.runoob.com/wp-content/uploads/2021/04/df-dp.png)
 
-\
 
 
 ## **Matplotlib**
 
 Matplotlib 是 Python 的绘图库，它能让使用者很轻松地将数据图形化，并且提供多样化的输出格式。
 
-Matplotlib 可以用来绘制各种静态，动态，交互式的图表**,**我们可以使用该工具将很多数据通过图表的形式更直观的呈现出来。
+Matplotlib 可以用来绘制各种静态，动态，交互式的图表\*\*,\*\*我们可以使用该工具将很多数据通过图表的形式更直观的呈现出来。
 
 Matplotlib 可以绘制线图、散点图、等高线图、条形图、柱状图、3D 图形、甚至是图形动画等等。
 
