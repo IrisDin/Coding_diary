@@ -2,9 +2,12 @@
 cover: >-
   https://images.squarespace-cdn.com/content/v1/5daddb33ee92bf44231c2fef/1593634997762-75P05A5AKO859N5G9OMU/medical-algorithms.gif
 coverY: 0
+description: Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”
 ---
 
 # Markdown Note
+
+
 
 {% embed url="https://markdown.com.cn" %}
 markdown官方文档
