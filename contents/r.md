@@ -6,9 +6,15 @@ coverY: 0
 
 # R
 
+{% embed url="https://www.rstudio.com/resources/cheatsheets" %}
+
 快捷键command+shift+ m = %>%
 
 ## DPLYR PACKAGE
+
+{% embed url="https://dplyr.tidyverse.org/reference/index.html" %}
+Dplyr offcial API Document
+{% endembed %}
 
 **select()**
 
@@ -16,15 +22,11 @@ coverY: 0
 
 variable\_name < - select(dataframe, column)
 
-
-
 **filter()**
 
 * select rows
 
 filter(dataframe, row\_name == value)
-
-
 
 **mutate()**
 
@@ -32,15 +34,11 @@ filter(dataframe, row\_name == value)
 
 mutate(dataframe, column\_name = operation)
 
-
-
 **arrange()**
 
 * change the order of rows
 
-arrange(dataframe, column_to_arrrange\_by)
-
-
+arrange(dataframe, column\_to\_arrrange\_by)
 
 **summarize()**
 
@@ -48,49 +46,32 @@ arrange(dataframe, column_to_arrrange\_by)
 
 summarize(dataframe, column\_name = function(column))
 
-
-
 **group\_by()**
 
 * segregate groups in dataframe
 
-group_by(dataframe, column_\_name)
+group\_by(dataframe, column\_\_name)
 
 **np\_data %>% group\_by(Region) %>% summarize(distinct\_parks = n\_distinct(ParkName))**
 
-__
+\_\_
 
 _**Pull** a vector or value_
 
 pull() can extract specific vectors and values It is similar to $ It is mostly useful because it looks a little nicer in pipes
 
-
-
 **Lag**
 
-cases  < - c(1, 5, 10, 17, 19, 25)&#x20;
+cases < - c(1, 5, 10, 17, 19, 25)
 
 lag(cases) NA 1 5 10 17 19
 
 cases - lag(cases)
 
-&#x20;NA 4 5 7 2 6
+NA 4 5 7 2 6
 
+### DPLYR Cheatsheet
 
+![](<../.gitbook/assets/截屏2022-02-07 下午9.26.41.png>)
 
-__
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](<../.gitbook/assets/截屏2022-02-07 下午9.27.16.png>)
