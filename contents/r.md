@@ -62,6 +62,10 @@ pull() can extract specific vectors and values It is similar to $ It is mostly u
 
 **Lag**
 
+find the previous values in a vetor
+
+useful in comparing values behind the current values
+
 cases < - c(1, 5, 10, 17, 19, 25)
 
 lag(cases) NA 1 5 10 17 19
@@ -69,6 +73,13 @@ lag(cases) NA 1 5 10 17 19
 cases - lag(cases)
 
 NA 4 5 7 2 6
+
+
+
+**Unite**
+
+* unite mutiple dataframe into a single column
+* unite(df,col='col\_name', c('col1,col2), sep="")
 
 ### DPLYR Cheatsheet
 
