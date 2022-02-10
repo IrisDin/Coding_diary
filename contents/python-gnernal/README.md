@@ -113,7 +113,7 @@ Python 的元组与列表类似，不同之处在于元组的元素不能修改�
 
 一对大括号创建一个空的字典：{}
 
-## 排序
+## 排序：
 
 排序基本函数：**sorted()**, **lambda**
 
@@ -249,6 +249,81 @@ print(sorted(dic, key=lambda k: dic[k][1]))
 # 按照dic value的第一个值从大到小反向排序，（value是一个list）
 print(sorted(dic, key=lambda k: dic[k][0], reverse=True))
 # 运行结果['c', 'b', 'a']
+```
+
+## 循环：
+
+### While条件控制循环
+
+![](https://pic1.zhimg.com/80/v2-c77b71617c152203dd267269943f488c\_1440w.jpg)
+
+> 注意：while循环条件表达式总是为True，就会无限循环下去，变成死循环，所以要特别留意 while 循环的退出条件。
+
+```
+# 问：求 1-100的和
+# 初始化i 和 sum的值
+sum = i = 0  
+while i <= 100:  # 循环控制条件
+    sum = sum + i
+    i + = 1   # 等同于i=i+1
+print(sum) # 输出结果5050
+```
+
+### **break和continue语句**
+
+* **break的功能是中断整个循环。**
+
+```
+# 使用for..in..循环遍历列表s1，当遍历的结果等于4的时候会执行break语句。
+# 该语句的功能是中断了整个循环。所以4之后的所有数字都不会被打印出来。
+s1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in s1:
+    if i == 4:
+        break
+    print(i)
+
+# 运行结果应该为 1,2,3
+```
+
+```
+# break嵌套循环
+for i in range(3):    # i=0,1,2
+    for j in range(4):   # j=0,1,2,3
+        if j > i:
+            break
+    print((i,j))  # 和第二个for对齐
+    
+# 运行结果
+(0, 1)
+(1, 2)
+(2, 3)
+```
+
+* **continue的功能是跳出某一次循环并继续执行下一次。**
+
+```
+# 使用for..in..循环遍历列表s1，当遍历的结果等于4的时候会执行continue语句。
+# 该语句的功能是跳出当前循环，继续执行下一次循环。所以除了数字4其他的数字都可以被打印出来。
+s1 = [1, 2, 3, 4, 5]
+for i in s1:
+    if i == 4:
+        continue
+    print(i)
+# 运行结果应该为 1,2,3,5
+```
+
+```
+# continue嵌套循环
+for i in range(3):
+    for j in range(4):
+        if j > i:
+            continue
+    print((i,j))
+    
+# 运行结果
+(0, 3)
+(1, 3)
+(2, 3)
 ```
 
 ## 数据结构复杂度
