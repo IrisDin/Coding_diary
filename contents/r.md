@@ -14,6 +14,8 @@ coverY: 0
 
 **dplyr** 承担了 tidyverse 中最基本也最重要的数据处理、转换、分析功能。
 
+主要通过 %>% 管道符号来连接不同的变量
+
 {% embed url="https://dplyr.tidyverse.org/reference/index.html" %}
 Dplyr offcial API Document
 {% endembed %}
