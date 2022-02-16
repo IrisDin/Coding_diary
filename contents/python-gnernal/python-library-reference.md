@@ -33,19 +33,23 @@ Matplotlib 可以用来绘制各种静态，动态，交互式的图表,我们�
 Matplotlib 可以绘制线图、散点图、等高线图、条形图、柱状图、3D 图形、甚至是图形动画等等。
 
 {% embed url="https://matplotlib.org/stable/index.html" %}
-click to view matplotlib offcical documentation
+**click to view matplotlib offcical documentation**
+{% endembed %}
+
+{% embed url="https://www.python-graph-gallery.com" %}
+**A useful website that teach u how to graph in python :)**
 {% endembed %}
 
 ## **S**eaborn
 
 {% embed url="https://seaborn.pydata.org/index.html#" %}
-click to view seaborn offcical documentation
+**click to view seaborn offcical documentation**
 {% endembed %}
 
 ## **Scikit-Learn**
 
 {% embed url="https://scikit-learn.org/stable/index.html" %}
-click to view **scikit-learn** offcical documentation
+**click to view scikit-learn offcical documentation**
 {% endembed %}
 
 ##

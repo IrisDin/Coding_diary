@@ -10,6 +10,10 @@ coverY: 0
 
 快捷键command+shift+ m = %>%
 
+快捷键 “option” + “-” = < -
+
+command shift c 一键注释代码
+
 ## DPLYR PACKAGE
 
 **dplyr** 承担了 tidyverse 中最基本也最重要的数据处理、转换、分析功能。

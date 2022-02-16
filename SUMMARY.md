@@ -10,4 +10,6 @@
 * [R](contents/r.md)
 * [Markdown Note](contents/markdown-note.md)
 * [Infomatics Note](contents/infomatics-note.md)
-* [Other/Algorithm](contents/other-algorithm.md)
+* [Other](contents/other/README.md)
+  * [Algorithm](contents/other/algorithm.md)
+  * [Data visulization](contents/other/data-visulization.md)
