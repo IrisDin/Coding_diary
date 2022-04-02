@@ -14,6 +14,8 @@ coverY: 0
 
 command shift c 一键注释代码
 
+**块代码执行【Ctrl+Enter】**或者全部代码执行**【Ctrl+Shift+Enter】**
+
 ## DPLYR PACKAGE
 
 **dplyr** 承担了 tidyverse 中最基本也最重要的数据处理、转换、分析功能。
