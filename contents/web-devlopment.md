@@ -169,3 +169,229 @@ Border(边框) - 围绕在内边距和内容外的边框。&#x20;
 Padding(内边距) - 清除内容周围的区域，内边距是透明的。&#x20;
 
 Content(内容) - 盒子的内容，显示文本和图
+
+
+
+CSS breakpoint
+
+
+
+## Javascript
+
+print function =  console.log("Hello World")
+
+#### JAVASCRIPT VARIABLES:
+
+```
+let x = 'hello'; //value is a String
+
+x = 42; //value is now a Number
+
+
+//create a variable (not assigned)
+let hoursSlept; 
+console.log(hoursSlept); //=> undefined
+```
+
+```
+//Numbers (no difference between int and float)
+const x = 4;   //'number'
+const y = 1.5; //'number'
+
+
+//Strings (single or double quotes, just be consistent)
+const message = "Hello world";
+
+
+//Booleans
+const likesCode = true;
+
+
+//Arrays - like lists in Python
+const letters = ['a', 'b', 'c']; //literal syntax
+const things = ['raindrops', 2.5, true, [3,4,3]]; //mix types
+console.log(letters[0]); //'a'
+console.log(letters[4]); //undefined
+letters[5] = 'f'; //assigning out of bounds grows array
+console.log(letters); //['a', 'b', 'c', , , 'f']
+letters.push('z'); //arrays have methods as well
+```
+
+#### Nested arrays
+
+```
+// an array of different dinners available at a fancy party
+// this list has 4 elements, each of which is a list of 3 elements
+// the indentation is just for human readability
+
+const dinnerOptions = [
+    ['chicken', 'mashed potatoes', 'mixed veggies'],
+    ['steak', 'seasoned potatoes', 'asparagus'],
+    ['fish', "rice", 'green beans'],
+    ['portobello steak', 'rice', 'green beans']
+];
+
+console.log(dinnerOptions.length); //4
+
+const fishOption = dinnerOptions[2]; // ['fish', 'rice', 'green beans']
+
+// fishOption is an array, so can reference its elements by index
+console.log(fishOption[0]); //"fish"
+
+// Access the 2th element's 0th element
+console.log(dinnerOption[2][0]); //"fish"
+```
+
+
+
+```
+'40' + 2 # The answer is 402 '' represent string
+'40' - 4 # The answer is 36 (miuns will turn the string into numbers
+
+const num = 10
+const str = '10'
+
+//comparisons: these will all be booleans (true/false)
+num == str  #(the answer is true)
+num === str #(the answer is false/ use triple equals to make comparison)
+'' == 0 //empty String compare to 0 #(the answer is true)
+```
+
+#### Object
+
+```
+const ages = {'sarah':42, 'amit':35, 'zhang':13}
+
+//can omit quotes on keys, but they are actually strings!
+const englishToSpanish = {one:'uno', two:'dos'}
+const numWords = {1:'one', 2:'two', 3:'three'}
+const keys = Object.keys(numWords) //[ '1', '2', '3' ]
+
+//mixed values
+const typeExamples = {'int':12, 'str':'dog', 'list':[1,2]}
+const empty = {}
+```
+
+#### Accessing Properties
+
+```
+const ages = {alice:40, bob:35, charles:13};
+
+//access ("look up") values
+console.log( ages['alice'] ); //=> 40
+console.log( ages['bob'] ); //=> 35
+console.log( ages['charles'] ); //=> 13
+
+//keys not in the object have undefined values
+console.log( ages['fred']); //=> undefined
+
+//assign values
+ages['alice'] = 41;
+console.log( ages['alice'] ); //=> 41
+
+ages['fred'] = 19; //adds the key and assigns value
+
+
+```
+
+```
+const person = {
+  firstName: 'Alice',
+  lastName: 'Wong',
+  age: 40,
+  favorites: {
+    music: 'jazz',
+    food: 'pizza',
+    numbers: [12, 42]
+  }
+};
+
+const name = person['firstName']; //get value of 'firstName' key
+person['lastName'] = 'Jones'; //set value of 'lastName' key
+console.log(person['firstName']+' '+person['lastName']); //"Alice Jones"
+
+
+const favFood = person['favorites'][inputtedValue]; //object in the object
+                //object           //value
+
+const firstNumber = person['favorites']['numbers'][0]; //12
+person['favorites']['numbers'].push(7); //push 7 onto the Array
+```
+
+#### DataTable
+
+```
+//Arbitrary list of people's names, heights, and weights
+const people = [
+    {name: 'Ada', height: 64, weight: 135},
+    {name: 'Bob', height: 74, weight: 156},
+    {name: 'Chris', height: 69, weight: 139},
+    {name: 'Diya', height: 69, weight: 144},
+    {name: 'Emma', height: 71, weight: 152}
+]
+```
+
+#### Conditions:
+
+```
+if(outside_temperature < 60) {
+  console.log("Wear a jacket");
+}
+else if(outside_temperature > 90) {
+  console.log("Wear sunscreen");
+}
+else if(outside_temperature == 72) {
+  console.log("Perfect weather!");
+}
+else {
+  console.log("Wear a t-shirt");
+}
+```
+
+#### For loops:
+
+```
+const myArray = [1, 2, 3, 4];
+for(const theItem of myArray) { //loop array items
+  console.log(theItem)
+}
+
+
+const myObject = {a: 1, b: 2, c: 3};
+for(const theKey in myObject) { //loop object keys
+  console.log(theKey, ":", myObject[theKey])
+}
+
+//explicit key looping
+const keys = Object.keys(myObject);
+for(const theKey of keys) { /*...* /}
+```
+
+#### Functions:
+
+```
+//Java
+public static String greet(String greeting, String name){
+    return greeting  + ", " + name;
+}
+
+public static void main(String[] args){
+    String msg = greet("Hello", "World");
+}
+
+
+# Python
+def greet(greeting, name):
+    return greeting  + ", " + name
+
+
+msg = greet("Hello", "World")
+
+
+
+//JavaScript
+function greet(greeting, name){
+    return greeting + ", " + name;
+}
+const msg = greet("Hello", "World");
+```
