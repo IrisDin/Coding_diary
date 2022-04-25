@@ -29,3 +29,11 @@
 ### **Split-plot Design:**
 
 <img src="../../.gitbook/assets/file.drawing (1).svg" alt="" class="gitbook-drawing">
+
+**HCI Reseach Bias comes from：**
+
+* **instrucments(measurements)**
+* **experimental procedures**
+* **participants**
+* **experimenter behavior**
+* **environment factor**
