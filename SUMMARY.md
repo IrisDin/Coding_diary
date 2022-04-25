@@ -13,6 +13,6 @@
 * [Stat](contents/stat.md)
 * [🕸 Web devlopment](contents/web-devlopment.md)
 * [Other](contents/other/README.md)
+  * [human-centered design](contents/other/human-centered-design.md)
   * [Algorithm](contents/other-algorithm.md)
-  * [Data visulization](contents/other/data-visulization.md)
   * [Data Structure](contents/other/data-structure.md)
