@@ -20,8 +20,6 @@ text-decoration: underline;
 
 }
 
-## HTML
-
 ```
 // html style quick reference
 
@@ -68,8 +66,6 @@ text-decoration: underline;
        </body>
     </html>
 ```
-
-## CSS
 
 ```
 // css quick reference
@@ -177,10 +173,6 @@ Content(内容) - 盒子的内容，显示文本和图
 
 
 CSS breakpoint
-
-
-
-## Bootstrap
 
 
 
@@ -403,5 +395,3 @@ function greet(greeting, name){
 }
 const msg = greet("Hello", "World");
 ```
-
-The **`push()`** method adds one or more elements to the end of an array and returns the new length of the array.
