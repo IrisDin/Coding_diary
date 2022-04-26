@@ -1,7 +1,3 @@
----
-description: print（“this）
----
-
 # 😀 Welcome:)
 
 ### General info 基础信息📝
