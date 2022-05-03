@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# Python General
+# 🐍 Python General
 
 ## Python运算符
 

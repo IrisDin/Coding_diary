@@ -1,4 +1,4 @@
-# human-centered design
+# 🧑🎨 human-centered design
 
 
 
@@ -37,3 +37,17 @@
 * **participants**
 * **experimenter behavior**
 * **environment factor**
+
+****
+
+**Value-sensitive design**
+
+**Design heuristic**
+
+{% embed url="https://faculty.washington.edu/ajko/books/design-methods/analytical" %}
+
+**User control and freedom** ：
+
+![](<../../.gitbook/assets/截屏2022-05-02 下午7.08.37.png>)
+
+****

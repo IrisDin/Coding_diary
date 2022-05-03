@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# Python Library Reference
+# 📚 Python Library Reference
 
 ## Pandas
 

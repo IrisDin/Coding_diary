@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# R
+# 🐇 R
 
 {% embed url="https://www.rstudio.com/resources/cheatsheets" %}
 

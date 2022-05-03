@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# Algorithm
+# 🍎 Algorithm
 
 ## I**nverted index**反向索引
 

@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# Machine Learning
+# 📠 Machine Learning
 
 ## 机器学习与人工智能 <a href="#1-ji-qi-xue-xi-mo-xing-de-fan-hua" id="1-ji-qi-xue-xi-mo-xing-de-fan-hua"></a>
 
@@ -56,3 +56,11 @@ coverY: 0
 ### 模型表现结论
 
 ![](../.gitbook/assets/WechatIMG143.jpeg)
+
+### 线性回归/逻辑回归模型
+
+check more deatils below ：]
+
+{% content-ref url="stat.md" %}
+[stat.md](stat.md)
+{% endcontent-ref %}
