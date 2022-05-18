@@ -57,10 +57,80 @@ coverY: 0
 
 ![](../.gitbook/assets/WechatIMG143.jpeg)
 
-### 线性回归/逻辑回归模型
+## 线性回归/逻辑回归模型
 
 check more deatils below ：]
 
 {% content-ref url="stat.md" %}
 [stat.md](stat.md)
 {% endcontent-ref %}
+
+## 机器学习评估指标大全: <a href="#all" id="all"></a>
+
+![](../.gitbook/assets/image.png)
+
+### 分类问题: <a href="#fenlei" id="fenlei"></a>
+
+我们有10张照片，5张男性、5张女性
+
+会有四种情况，构成了混淆矩阵
+
+![](https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-11-21-four-1.png)
+
+TP – True Positive：实际为男性，且判断为男性（正确）
+
+FN – False Negative：实际为男性，但判断为女性（错误）
+
+TN – True Negative：实际为女性，且判断为女性（正确）
+
+FP – False Positive：实际为女性，但判断为男性（错误）
+
+![](https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-11-21-jieshi-1.png)
+
+### 分类评估指标详解 <a href="#detail" id="detail"></a>
+
+准确率 – Accuracy
+
+预测正确的结果占总样本的百分比，公式如下：
+
+**准确率 =(TP+TN)/(TP+TN+FP+FN)**
+
+****
+
+> 虽然准确率可以判断总的正确率，但是在**样本不平衡** 的情况下，并不能作为很好的指标来衡量结果。举个简单的例子，比如在一个总样本中，正样本占 90%，负样本占 10%，样本是严重不平衡的。对于这种情况，我们只需要将全部样本预测为正样本即可得到 90% 的高准确率，但实际上我们并没有很用心的分类，只是随便无脑一分而已。这就说明了：**由于样本不平衡的问题，导致了得到的高准确率结果含有很大的水分。即如果样本不平衡，准确率就会失效。**
+
+
+
+精确率（差准率）- Precision
+
+所有被预测为正的样本中实际为正的样本的概率，公式如下：
+
+**精准率 =TP/(TP+FP)**
+
+![](https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-11-21-Precision.png)
+
+> 精准率和准确率看上去有些类似，但是完全不同的两个概念。精准率代表对正样本结果中的预测准确程度，而准确率则代表整体的预测准确程度，既包括正样本，也包括负样本。
+
+
+
+召回率（查全率）- Recall
+
+实际为正的样本中被预测为正样本的概率，其公式如下：
+
+**召回率=TP/(TP+FN)**
+
+![](https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-11-21-Recall.png)
+
+**召回率的应用场景：** 比如拿网贷违约率为例，相对好用户，我们更关心坏用户，不能错放过任何一个坏用户。因为如果我们过多的将坏用户当成好用户，这样后续可能发生的违约金额会远超过好用户偿还的借贷利息金额，造成严重偿失。**召回率越高，代表实际坏用户被预测出来的概率越高，它的含义类似：宁可错杀一千，绝不放过一个。**
+
+****
+
+_F1分数_
+
+**精确率和召回率的平衡点**
+
+**F1=(2×Precision×Recall)/（Precision+Recall）**
+
+![](https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-11-21-f1.png)
+
+\

@@ -362,7 +362,3 @@ can use "traceroute" to see the routers that packets traverse to get from your d
 
 
 
-## UW ischool book/note/resources
-
-{% embed url="https://faculty.washington.edu/ajko/books/design-methods" %}
-

@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.squarespace-cdn.com/content/v1/5daddb33ee92bf44231c2fef/1593634997762-75P05A5AKO859N5G9OMU/medical-algorithms.gif
+coverY: 0
+---
+
 # 🌲 Data Structure
 
 ## 排序二叉树（Binary Tree）

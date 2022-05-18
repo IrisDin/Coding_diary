@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.squarespace-cdn.com/content/v1/5daddb33ee92bf44231c2fef/1593634997762-75P05A5AKO859N5G9OMU/medical-algorithms.gif
+coverY: 0
+---
+
 # 🕸 Web devlopment
 
 crete a new branch
@@ -180,11 +186,11 @@ CSS breakpoint
 
 
 
-## Bootstrap
+## Bootstrap:
 
 
 
-## Javascript
+## Javascript:
 
 print function =  console.log("Hello World")
 
@@ -406,4 +412,232 @@ const msg = greet("Hello", "World");
 
 The **`push()`** method adds one or more elements to the end of an array and returns the new length of the array.
 
-## DOM
+## DOM**:**
+
+### Referencing HTML Elements:
+
+In order to manipulate the DOM elements in a page, we need a variable that refers to that element. You can get these variable references by using one of the `document` “selector” functions:
+
+```
+//element with id="foo"
+let fooElem = document.getElementById('foo');
+
+//elements with class="row"
+let rowElems = document.getElementsByClassName('row'); //note the plural!
+
+//<li> elements
+let liElems = document.getElementsByTagName('li'); //note the plural!
+
+/*easiest to select by reusing CSS selectors! */
+let cssSelector = 'header p, .title > p';  //a string of a CSS selector
+
+//selects FIRST element that matches css selector
+let elem = document.querySelector(cssSelector);
+
+//matches ALL elements that match css selector
+let elems = document.querySelectorAll(cssSelector);
+```
+
+### Modifying HTML Elements:
+
+Once you have a reference to an element, you access properties and call methods on that object in order to modify its state in the DOM
+
+```
+//get a reference to the FIRST <p> element
+let elem = document.querySelector('p');
+
+console.log(elem); //to demonstrate
+
+let text = elem.textContent; //the text content of the elem
+elem.textContent = "This is different content!"; //change the content
+
+let html = elem.innerHTML; //content including HTML
+elem.innerHTML = "This is <em>different</em> content!"; //interpreted as HTML
+```
+
+![](<../.gitbook/assets/截屏2022-05-03 下午12.07.35.png>)
+
+### **Changing Attributes:**
+
+```
+//get a reference to the `#picture` element
+let imgElem = document.querySelector('#picture');
+
+//access the attribute
+console.log( imgElem.src ); //logs the source of the image
+
+//modify the attribute
+imgElem.src = 'my-picture.png';
+```
+
+You can alternatively modify element attributes by using the methods `getAttribute()` (passing it which attribute to access) and `setAttribute()` (passing it which attribute to modify and what value to assign to that attribute):
+
+```
+let imgElem = document.querySelector('#picture');
+imgElement.setAttribute('src', 'my-other-picture.png'); //set the src
+
+console.log( imgElem.getAttribute('src') ); //=> 'my-other-picture.png'
+
+//the `hasAttribute()` method returns a boolean.
+let isThick = document.querySelector('svg rect')
+                      .hasAttribute('stroke-width'); //chained anonymous variables
+```
+
+### **Changing Element CSS:**
+
+```
+//access list of classes
+let classList = elem.classList;
+
+//add a class
+elem.classList.add('small'); //add a single class
+elem.classList.add('alert','alert-warning'); //add multiples classes (not on IE)
+
+//remove a class
+elem.classList.remove('small');
+
+//"toggle" (add if missing, remove if present)
+elem.classList.toggle('small');
+```
+
+### Modifying the DOM Tree:
+
+```
+<main>
+    <section id="first-section">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+    </section>
+    <section id="second-section"></section>
+<main>
+```
+
+```
+//get reference to the first section
+let firstSection = document.querySelector('#first-section');
+
+//get reference to the "parent" node
+let main = firstSection.parentElement;
+console.log(main); //<main>...</main>
+
+//get reference to the child elements (2 paragraphs)
+let paragraphs = firstSection.children;
+console.log(paragraphs.length); //2
+console.log(paragraphs[0]); //<p>First paragraph</p>
+
+//get reference to the the next sibling
+let sectionSection = firstSection.nextElementSibling;
+console.log(secondSection); //<section id="second-section"></section>
+
+```
+
+```
+//create a new <p> (not yet in the tree)
+let newP = document.createElement('p');
+newP.textContent = "I'm new!";
+
+//create Node of textContent only (not an HTML element, just text)
+let newText = document.createTextNode("I'm blank");
+
+let main = document.querySelector('main');
+main.appendChild(newP); //add element INSIDE (at end)
+main.appendChild(newText); //add the text inside, AFTER the <p>
+
+//add anonymous new node BEFORE element. Parameters are: (new, old)
+main.insertBefore(document.createTextNode("First!"), newP);
+
+//replace node. Parameters are: (new, old)
+main.replaceChild(document.createTextNode('boo'), newText);
+
+//remove node
+main.removeChild(main.querySelector('p'));
+```
+
+### Listening for Events:
+
+In order to make a page **interactive** (that is, able to change in response to user actions), you need to be able to respond to _user events_. Whenever a user interacts with a computer, the operating system announces that interaction as an **event**
+
+```
+//a (named) callback function
+function onClickCallback() {
+    console.log("You clicked me!");
+}
+
+//get a reference to the element we want to "listen" to
+let button = document.querySelector('button');
+
+//register a listener for 'click' events
+button.addEventListener('click', onClickCallback);
+```
+
+It is **much** more common to use an _anonymous function_ as the callback:
+
+```
+let button = document.querySelect.select('button');
+button.addEventListener('click', function() {
+    console.log("You clicked me!");
+});
+```
+
+### Types of Events:
+
+![](<../.gitbook/assets/截屏2022-05-03 下午2.41.09.png>)
+
+### Event-Driven Programming:
+
+```
+//pseudocode
+WHEN an event occurs {
+   check the STATE of the program;
+   DECIDE what to do based on that state;
+   UPDATE the state as necessary for the next event;
+}
+```
+
+```
+let clickCount = 0;  //keep track of the "state" (global)
+document.querySelector('button').addEventListener('click', function() {
+    if(clickCount > 10) {  //decide what to do
+        console.log("I think you've had enough");
+    }
+    else {
+        clickCount++;  //change state (+1)
+        console.log('You clicked me!');
+    }
+});
+```
+
+## ES6+ Features：
+
+## REACT:
+
+元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容
+
+```
+const element = <h1>Hello, world!</h1>;
+```
+
+将元素渲染到 DOM 中
+
+首先我们在一个 HTML 页面中添加一个 id="example" 的 \<div>:
+
+```
+<div id="example"></div>
+```
+
+将元素渲染到 DOM 中：
+
+```
+const element = <h1>Hello, world!</h1>;
+ReactDOM.render(
+    element,
+    document.getElementById('example')
+);
+```
+
+更新元素渲染
+
+```
+```
+
+\
