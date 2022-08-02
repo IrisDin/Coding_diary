@@ -39,4 +39,36 @@ limited查询`SELECT column, another_column, … FROM mytable WHERE`` `_`conditi
 
 ``
 
-``
+![](<../.gitbook/assets/截屏2022-08-01 下午7.52.24.png>)
+
+### 用JOINs进行多表联合查询
+
+用INNER JOIN 连接表的语法
+
+`SELECT column, another_table_column, … FROM mytable （主表）`&#x20;
+
+**`INNER JOIN another_table （要连接的表） ON mytable.id = another_table.id (想象一下刚才讲的主键连接，两个相同的连成1条)`**
+
+&#x20;`WHERE`` `_`condition(s)`_` ``ORDER BY column, … ASC/DESC`&#x20;
+
+`LIMIT num_limit OFFSET num_offset;`
+
+![](<../.gitbook/assets/截屏2022-08-01 下午8.13.06.png>)
+
+* `INNER JOIN` 只会保留两个表都存在的数据
+
+用LEFT/RIGHT/FULL JOINs 做多表查询
+
+`SELECT column, another_column, … FROM mytable`&#x20;
+
+**`INNER/LEFT/RIGHT/FULL JOIN another_table`**
+
+&#x20;**`ON mytable.id = another_table.matching_id`**` ```&#x20;
+
+`WHERE`` `_`condition(s)`_` ```&#x20;
+
+`ORDER BY column, … ASC/DESC`&#x20;
+
+`LIMIT num_limit OFFSET num_offset;`
+
+![](<../.gitbook/assets/截屏2022-08-01 下午8.38.11.png>)
