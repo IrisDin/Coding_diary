@@ -72,3 +72,10 @@ limited查询`SELECT column, another_column, … FROM mytable WHERE`` `_`conditi
 `LIMIT num_limit OFFSET num_offset;`
 
 ![](<../.gitbook/assets/截屏2022-08-01 下午8.38.11.png>)
+
+
+
+### NULL
+
+
+
