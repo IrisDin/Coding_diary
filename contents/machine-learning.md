@@ -95,7 +95,7 @@ FP – False Positive：实际为女性，但判断为男性（错误）
 
 **准确率 =(TP+TN)/(TP+TN+FP+FN)**
 
-****
+
 
 > 虽然准确率可以判断总的正确率，但是在**样本不平衡** 的情况下，并不能作为很好的指标来衡量结果。举个简单的例子，比如在一个总样本中，正样本占 90%，负样本占 10%，样本是严重不平衡的。对于这种情况，我们只需要将全部样本预测为正样本即可得到 90% 的高准确率，但实际上我们并没有很用心的分类，只是随便无脑一分而已。这就说明了：**由于样本不平衡的问题，导致了得到的高准确率结果含有很大的水分。即如果样本不平衡，准确率就会失效。**
 
@@ -123,7 +123,7 @@ FP – False Positive：实际为女性，但判断为男性（错误）
 
 **召回率的应用场景：** 比如拿网贷违约率为例，相对好用户，我们更关心坏用户，不能错放过任何一个坏用户。因为如果我们过多的将坏用户当成好用户，这样后续可能发生的违约金额会远超过好用户偿还的借贷利息金额，造成严重偿失。**召回率越高，代表实际坏用户被预测出来的概率越高，它的含义类似：宁可错杀一千，绝不放过一个。**
 
-****
+
 
 _F1分数_
 
@@ -133,4 +133,42 @@ _F1分数_
 
 ![](https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-11-21-f1.png)
 
+## Bayes Theorem:
+
+Bayes Theorem is a fundamental concept in probability theory and machine learning that helps us understand how the probability of an event changes when we have new information. In simple terms, it tells us how likely something is to happen, given some evidence we already know.
+
+Bayes Theorem is a mathematical formula that allows us to update our initial guess (called the **prior probability**) with new evidence (called the **likelihood**) to arrive at a more accurate prediction (called the **posterior probability**). In machine learning, it's often used for classification tasks, like identifying spam emails or detecting diseases from medical tests, where we want to predict a category based on some observed features.
+
+
+
+Let's use some mock data to calculate probabilities for the spam email example:
+
+1. Define events A and B:
+   * A: An email is spam.
+   * B: The email contains the word "free".
+2. Calculate probabilities using mock data:
+   * P(A): The probability that an email is spam. Suppose 60% of emails are spam in our dataset.
+   * P(B): The probability that an email contains the word "free". Suppose 20% of emails contain the word "free" in our dataset.
+   * P(B | A): The probability that an email contains the word "free", given that it's spam. Suppose 50% of spam emails contain the word "free" in our dataset.
+3. Apply Bayes Theorem to calculate P(A | B): P(A | B) = (P(B | A) \* P(A)) / P(B) P(A | B) = (0.5 \* 0.6) / 0.2 P(A | B) = 0.3 / 0.2 P(A | B) = 1.5
+
+Since probabilities can't be greater than 1, we must have made an error in our mock data. In reality, these probabilities should be consistent, and such a situation shouldn't arise. Ensure that the probabilities you use are accurate and coherent.
+
+Now, let's consider the medical test example:
+
+1. Define events A and B:
+   * A: A person has the disease.
+   * B: The person's test result is positive.
+2. Calculate probabilities using mock data:
+   * P(A): The probability that a person has the disease. Suppose the disease has a prevalence rate of 1% (0.01) in the population.
+   * P(B): The probability that a person's test result is positive. Suppose 5% of test results are positive in our dataset.
+   * P(B | A): The probability that a person's test result is positive, given they have the disease. Suppose the test's sensitivity is 95% (0.95).
+3. Apply Bayes Theorem to calculate P(A | B): P(A | B) = (P(B | A) \* P(A)) / P(B) P(A | B) = (0.95 \* 0.01) / 0.05 P(A | B) = 0.0095 / 0.05 P(A | B) ≈ 0.19
+
+In this example, P(A | B) ≈ 0.19 means that there's a 19% chance that a person has the disease, given that they have a positive test result. This helps us understand the true likelihood of having the disease despite a positive test result, considering the disease prevalence and test sensitivity.
+
+\
+
+
+\
 \

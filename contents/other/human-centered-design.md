@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# 🧑🎨 human-centered design
+# 🧑🎨 🧑🎨 human-centered design
 
 
 
@@ -14,23 +14,23 @@ coverY: 0
 
 **\*The same participant tests all conditions corresponding to a variable**
 
-****
+
 
 ### **Between-subject Design:**
 
-****
+
 
 <img src="../../.gitbook/assets/file.drawing.svg" alt="" class="gitbook-drawing">
 
 **Differnt participants are assigned to different conditions corresponding to a variable.**
 
-****
+
 
 ### **Experimental Design:**
 
 **The process of choosing how to run an experiment to answer the research question**
 
-****
+
 
 ### **Split-plot Design:**
 
@@ -44,7 +44,7 @@ coverY: 0
 * **experimenter behavior**
 * **environment factor**
 
-****
+
 
 **Value-sensitive design**
 
@@ -56,4 +56,3 @@ coverY: 0
 
 ![](<../../.gitbook/assets/截屏2022-05-02 下午7.08.37.png>)
 
-****

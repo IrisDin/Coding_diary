@@ -1,4 +1,4 @@
-# 1 SQL/DATA
+# 1 1 SQL/DATA
 
 ### SQL 查询
 
@@ -8,7 +8,7 @@ Select 查询某些属性列（specific columns）的语法
 
 Select 查询所有列`SELECT * FROM mytable（表名）;`
 
-``
+
 
 ### 条件查询 (constraints)
 
@@ -29,15 +29,15 @@ Select 查询所有列`SELECT * FROM mytable（表名）;`
 
 选取出唯一的结果的语法`SELECT`` `**`DISTINCT`**` ``column, another_column, … FROM mytable WHERE`` `_`condition(s)`_`;`
 
-``
 
-结果排序（ordered results）`SELECT column, another_column, … FROM mytable WHERE`` `_`condition(s)`_` ```` `**`ORDER BY column ASC/DESC`**`;`
 
-``
+结果排序（ordered results）`SELECT column, another_column, … FROM mytable WHERE`` `_`condition(s)`_ **`ORDER BY column ASC/DESC`**`;`
+
+
 
 limited查询`SELECT column, another_column, … FROM mytable WHERE`` `_`condition(s)`_` ``ORDER BY column ASC/DESC`` `**`LIMIT num_limit OFFSET num_offset`**`;`
 
-``
+
 
 ![](<../.gitbook/assets/截屏2022-08-01 下午7.52.24.png>)
 
@@ -63,9 +63,9 @@ limited查询`SELECT column, another_column, … FROM mytable WHERE`` `_`conditi
 
 **`INNER/LEFT/RIGHT/FULL JOIN another_table`**
 
-&#x20;**`ON mytable.id = another_table.matching_id`**` ```&#x20;
+&#x20;**`ON mytable.id = another_table.matching_id`**&#x20;
 
-`WHERE`` `_`condition(s)`_` ```&#x20;
+`WHERE`` `_`condition(s)`_&#x20;
 
 `ORDER BY column, … ASC/DESC`&#x20;
 

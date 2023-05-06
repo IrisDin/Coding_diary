@@ -61,7 +61,7 @@ sample variance等于 theoretical variance的 1/n
 
 **(2)假设检定(hypothesis testing)**
 
-****
+
 
 A **95%** **confidence interval** \[a,b] means: (let's assume the true value p)
 
@@ -107,7 +107,7 @@ There is a probability of **5%** that this estimate, a\<p\<b, will 100% fail.
 
 条形图上你可以看出今年客户量是1000人，去年是800人。条形图并没有说今年客户量比去年客户量不是随机因素导致的增加，它只是把数据原样展示了出来。要做出今年比去年客户量增加不是随机因素导致的，而是显著的增加，你就要使用假设检验做检验，假设检验属于推断统计。
 
-****
+
 
 
 
@@ -135,15 +135,15 @@ There is a probability of **5%** that this estimate, a\<p\<b, will 100% fail.
 
 ![](<../.gitbook/assets/截屏2022-05-02 下午7.44.55.png>)
 
-![](<../.gitbook/assets/截屏2022-05-02 下午7.45.06 (1).png>)
+![](<../.gitbook/assets/截屏2022-05-02 下午7.45.06.png>)
 
 ![](<../.gitbook/assets/截屏2022-05-02 下午7.45.32.png>)
 
 ![](<../.gitbook/assets/截屏2022-05-02 下午7.45.53.png>)
 
-![](<../.gitbook/assets/截屏2022-05-02 下午7.52.42.png>)
+![](<../.gitbook/assets/截屏2022-05-02 下午7.52.42 (1).png>)
 
-![](<../.gitbook/assets/截屏2022-05-02 下午7.52.54 (1).png>)
+![](<../.gitbook/assets/截屏2022-05-02 下午7.52.54.png>)
 
 **残差平方和：**
 
@@ -153,5 +153,5 @@ RSS（也称为残差平方和）本质上决定了回归模型解释或**表示
 
 残差平方和越**低**，**回归模型在解释数据方面就越好**
 
-****
+
 

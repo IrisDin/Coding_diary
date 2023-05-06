@@ -114,7 +114,7 @@ h1(there is a space) .alert{find the alert but only the alert inside
 the h1 class}
 ```
 
-****
+
 
 ![](<../.gitbook/assets/截屏2022-04-07 上午8.27.12.png>)
 
@@ -167,7 +167,7 @@ the h1 class}
 
 ![](<../.gitbook/assets/截屏2022-04-10 下午9.51.23.png>)
 
-****
+
 
 > CSS盒模型可以看作是一个盒子，用来装东西的容器，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。在网页中，每个盒子都有自己的位置，大小，还影响着其它盒子的位置和大小。
 

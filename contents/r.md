@@ -145,7 +145,7 @@ group\_by(dataframe, column\_\_name)
 
 和 `group_by()` 联合使用时，它可以计算分组变量的每个水平上各有多少个观测**（observation）**
 
-****
+
 
 `n()`会把缺失值也包含到计数中，如果想要计算出非缺失值的数量，可以使用`sum(is.na(x))`。如果想要计算唯一值的数量，可以使用`n_distinct()`
 
@@ -216,4 +216,4 @@ ggplot documentation
 
 ![](<../.gitbook/assets/截屏2022-02-10 下午8.14.49.png>)
 
-![](<../.gitbook/assets/截屏2022-02-10 下午8.15.06 (1).png>)
+![](<../.gitbook/assets/截屏2022-02-10 下午8.15.06.png>)
