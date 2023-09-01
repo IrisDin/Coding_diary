@@ -75,7 +75,86 @@ limited查询`SELECT column, another_column, … FROM mytable WHERE`` `_`conditi
 
 
 
-### NULL
+
+
+**SQL Title**
+
+Functions
+
+CASEWHEN
+
+Whereas CASE  allows you to do different tests with each WHEN clause CASE
+
+WHEN A=B THEN C&#x20;
+
+WHEN D!=F THEN E
+
+ELSEQ
+
+
+
+WHERE customer\_id **NOT IN** (SELECT order\_cust\_id FROM orders WHERE order\_date BETWEEN '2019-02-01' AND '2019-03-01')
+
+
+
+WHERE customer\_first\_name **IN** ('Jill', 'Eva')
+
+
+
+#### String Manipulation:
+
+#### 1. SELECT substring('2023-01-25', 6, 2) AS month; -- Output: '01'
+
+&#x20;                                  ('2023-01-25', 7, 3) AS month; -- Output: '1-2'
+
+The `substring` function extracts a portion of a string. In this example, it starts from the 6th character and extracts 2 characters.
+
+
+
+**`lower`**`()`, **`upper`**`()`, **`left`**`()`, **`right`**`()`, **`length`**`()`: These functions are used for case conversion, getting a certain part of the string, and getting the length of the string, respectively.
+
+SELECT **lower**('HELLO'); -- Output: 'hello'\
+SELECT **upper**('hello'); -- Output: 'HELLO'
+
+SELECT **left**('hello', 2); -- Output: 'he'
+
+SELECT **right**('hello', 3); -- Output: 'llo'
+
+SELECT **length**('hello'); -- Output: 5
+
+
+
+
+
+SELECT **concat**('Hello', ' ', 'World'); -- Output: 'Hello World'
+
+SELECT **GROUP\_CONCAT**(DISTINCT fruit ORDER BY fruit ASC) FROM table; -- Output could be 'apple,banana,orange'
+
+SELECT **ROUND**(123.4567, 2); -- Output: 123.46
+
+SELECT **ABS**(-5), **SQUARE**(4), **SQRT**(16), **STDEV**(column\_name) FROM table;
+
+
+
+**Type CASTING:**
+
+SELECT 5::float; -- Output: 5.0
+
+SELECT avg(column1 / column2::float) FROM table;
+
+\
+
+
+\
+
+
+
+
+
+
+
+
+
 
 
 
